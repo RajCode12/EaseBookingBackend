@@ -1,0 +1,18 @@
+<!-- view-ticket.component.html -->
+<div class="ticket-container">
+    <h2>Ticket Details</h2>
+    <div class="ticket">
+        <p><strong>Seat Number:</strong> {{ flight.seatNumber }}</p>
+        <p><strong>Source:</strong> {{ flight.source }}</p>
+        <p><strong>Destination:</strong> {{ flight.destination }}</p>
+        <p><strong>Adults:</strong> {{ flight.adults }}</p>
+        <p><strong>Children:</strong> {{ flight.children }}</p>
+        <p><strong>Date:</strong> {{ flight.date | date }}</p>
+        <p><strong>Passenger Name:</strong> {{ flight.passengerName }}</p>
+        <p><strong>Passenger Age:</strong> {{ flight.passengerAge }}</p>
+        <p><strong>Flight Name:</strong> {{ flight.flightName }}</p>
+        <p><strong>Flight Number:</strong> {{ flight.flightNumber }}</p>
+        <p><strong>Student:</strong> {{ flight.student ? 'Yes' : 'No' }}</p>
+        <p><strong>Army:</strong> {{ flight.army ? 'Yes' : 'No' }}</p>
+    </div>
+</div>

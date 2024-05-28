@@ -1,0 +1,43 @@
+<h1 class="header">Your Transaction</h1>
+
+<div class="container">
+    <table class="custom-table">
+        <div class="trans-container">
+            <div class="trans-box" *ngFor="let trans of payments">
+                <div class="trans-details">
+                    <img class="logo" src="../assets/rupee.png">
+                    <h3>PNR : {{ trans.pnr }}</h3>
+                    <p>Date : {{format(trans.date)}}</p>
+                    <p>Upi Id: {{ trans.upi }}</p>
+                    <p>Amount : {{ trans.amount }}</p>
+                    <p>Status : {{ status }}</p>
+                </div>
+            </div>
+        </div>
+    </table>
+</div>
+
+
+
+
+<div class="container">
+    <!-- <h1 class="header">Your Transaction</h1> -->
+    <table class="custom-table">
+        <div class="trans-container">
+            <div class="trans-box" *ngFor="let transaction of payment">
+                <div class="trans-details">
+                    <img class="logo" src="../assets/rupee.png">
+                    <!-- <h3>PNR : {{train.seatNumber}}546{{train.seatNumber}}</h3> -->
+                    <p>Payment Id : {{transaction.paymentId}}</p>
+                    <p>Upi Id: {{ transaction.upiId }}</p>
+                    <p>Amount : {{ transaction.payAmount }}</p>
+                    <p>Status : {{ transaction.payStatus }}</p>
+                </div>
+            </div>
+        </div>
+    </table>
+</div>
+
+
+
+

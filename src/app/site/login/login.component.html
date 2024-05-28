@@ -1,0 +1,72 @@
+<!-- <h1>Login Page</h1>
+
+
+<img src="../assets/logo.png" alt="Logo" class="logo">
+<form (ngSubmit)="userLogin()" #loginForm="ngForm">
+    <div>
+        <label>Email</label>
+        <input type="text" id="email" [(ngModel)]="user.email" name="email" required>
+    </div>
+ 
+    <div>
+        <label>Password</label>
+        <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+    </div>
+ 
+    <button type="submit">Login</button>
+    
+</form>
+
+
+
+
+
+
+ -->
+
+ 
+<!-- 
+    <h1>Login Page</h1>
+    
+    <img src="../assets/logo.png" alt="Logo" class="logo">
+    <form (ngSubmit)="userLogin()" #loginForm="ngForm">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" [(ngModel)]="user.email" name="email" required>
+        </div>
+     
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+        </div>
+     
+        <button type="submit">Login</button>
+        
+    </form> -->
+
+
+
+    <div class="background">
+        <div class="login-container">
+            <h1>Ease Booking</h1>
+    
+            <img src="../assets/logo.png" alt="Logo" class="logo">
+            <form (ngSubmit)="userLogin()" #loginForm="ngForm">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" [(ngModel)]="user.email" name="email" required>
+                </div>
+            
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+                </div>
+            
+                <button type="submit">Login</button>
+            </form>
+
+            <button (click)="Onclick()">Forgot Password</button>
+            <button (click)="Onpressed()">Sign-Up</button>
+        </div>
+    </div>
+    

@@ -1,0 +1,73 @@
+
+<!-- <h1>Sign Up</h1>
+
+<form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+    <div>
+        <label>Email</label>
+        <input type="text" id="email" [(ngModel)]="person.email" name="email" required>
+    </div>
+ 
+    <div>
+        <label>First Name</label>
+        <input type="text" id="firstname" [(ngModel)]="person.firstname" name="firstname" required>
+    </div>
+
+    <div>
+        <label>Last Name</label>
+        <input type="text" id="lastname" [(ngModel)]="person.lastname" name="lastname" required>
+    </div>
+   
+    <div>
+        <label>Date of Birth</label>
+        <input type="date" id="dob" [(ngModel)]="person.dob" name="dob" required>
+    </div>
+   
+    <div>
+        <label>Contact</label>
+        <input type="number" id="contact" [(ngModel)]="person.contact" name="contact" required>
+    </div>
+   
+    <div>
+        <label>Password</label>
+        <input type="password" id="password" [(ngModel)]="person.password" name="password" required>
+    </div>
+ 
+    <button type="submit" [disabled]="!signupForm.form.valid">Submit</button>
+</form> -->
+
+<h1 class="head">Sign Up</h1>
+
+<form (ngSubmit)="onSubmit()" #signupForm="ngForm" class="signup-form">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" class="form-control" [(ngModel)]="person.email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" class="form-control" [(ngModel)]="person.firstname" name="firstname" required>
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" class="form-control" [(ngModel)]="person.lastname" name="lastname" required>
+    </div>
+
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" class="form-control" [(ngModel)]="person.dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="number" id="contact" class="form-control" [(ngModel)]="person.contact" name="contact" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" [(ngModel)]="person.password" name="password" required>
+    </div>
+
+    <button type="submit" class="submit-button" [disabled]="!signupForm.form.valid">Submit</button>
+</form>
+

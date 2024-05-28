@@ -1,0 +1,50 @@
+<header>
+    <h1>My Bookings</h1>
+  </header>
+
+
+
+  <div class="booking-list">
+    <div class="booking" *ngFor="let flight of flights; let i = index">
+      <h2>{{ i + 1 }}. Flight Booking </h2>
+      <!-- <p><strong>Seat Number:</strong> {{ flight.seatNumber }}</p> -->
+      <p><strong>Passenger Name:</strong> {{ flight.passengerName }}</p>
+      <p><strong>Source:</strong> {{ flight.source }}</p>
+      <p><strong>Destination:</strong> {{ flight.destination }}</p>
+      <p><strong>Date:</strong> {{ flight.date | date }}</p>
+      <!-- <p><strong>Adults:</strong> {{ flight.adults }}</p> -->
+      <!-- <p><strong>Children:</strong> {{ flight.children }}</p> -->
+      <!-- <p><strong>passenger Age:</strong> {{ flight.passengerAge }}</p> -->
+      <!-- <p><strong>Flight Name:</strong> {{ flight.flightName }}</p> -->
+      <!-- <p><strong>Flight Number:</strong> {{ flight.flightNumber }}</p> -->
+      <!-- <p><strong>Student:</strong> {{ flight.student }}</p> -->
+      <!-- <p><strong>Army:</strong> {{ flight.army }}</p> -->
+      <button (click)="viewTicket(flight)">View Ticket</button>
+    </div>
+  </div>
+  
+
+
+
+
+  
+  <!-- <div class="booking-list">
+    <div class="booking">
+      <h2>Flight Booking #1</h2>
+      <p><strong>Source:</strong> New York</p>
+      <p><strong>Destination:</strong> London</p>
+      <p><strong>Adults:</strong> 2</p>
+      <p><strong>Children:</strong> 1</p>
+    </div>
+    <div class="booking">
+      <h2>Flight Booking #2</h2>
+      <p><strong>Source:</strong> Los Angeles</p>
+      <p><strong>Destination:</strong> Paris</p>
+      <p><strong>Adults:</strong> 1</p>
+      <p><strong>Children:</strong> 0</p>
+    </div>
+  </div> -->
+
+  <footer>
+    <p>&copy; 2024 VP Airline Booking System</p>
+  </footer>

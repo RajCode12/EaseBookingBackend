@@ -1,0 +1,130 @@
+<!-- <div  class="container">
+    <u><h2 class="heading">Electronic Reservation Slip(ERS)</h2></u>
+    <div style="text-align: center; padding-bottom: 10px;">
+        <img src="../assets/bus-img.png" style="width: auto; height: 100px;">
+    </div>
+</div>
+<div>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>PNR No</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td>{{bus.pnr}}</td>
+                <td>{{bus.source}}</td>
+                <td>{{bus.destination}}</td>
+                <td>{{bus.date}}</td>
+        </tbody>
+    </table>
+</div>
+<div>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Passenger Name</th>
+                <th>Passenger Age</th>
+                <th>Seat Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of passengers">
+                <td>{{p.name}}</td>
+                <td>{{p.age}}</td>
+                <td>{{p.seat}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<div class="container">
+    <div class="header">
+        <h2 class="heading">Electronic Reservation Slip (ERS)</h2>
+        <div class="bus-image">
+            <img src="../assets/bus-img.png" alt="Bus Image" style="width: auto; height: 100px;">
+        </div>
+    </div>
+
+    <div class="reservation-details">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>PNR No</th>
+                    <th>Bus Name</th>
+                    <th>Bus Type</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{bus.pnr}}</td>
+                    <td>{{bus.busName}}</td>
+                    <td>{{bus.type}}</td>
+                    <td>{{bus.source}}</td>
+                    <td>{{bus.destination}}</td>
+                    <td>{{format(bus.date)}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="passenger-details">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Passenger Name</th>
+                    <th>Passenger Age</th>
+                    <th>Seat Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of passengers">
+                    <td>{{p.name}}</td>
+                    <td>{{p.age}}</td>
+                    <td>{{p.seat}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="payment-details">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Upi Id</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{payment.upi}}</td>
+                    <td>{{payment.amount}}</td>
+                    <td>{{status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bus-guidelines">
+        <h4>Bus Guidelines : </h4>
+        <ul>
+            <li><strong>The bus ticket booking voucher</strong> which Our Bus issues to a User is solely based on the information provided or updated by the bus operator regarding the seat availability.</li>
+            
+            <li><strong>At the time of boarding</strong> the bus, Users shall furnish a copy of the ticket, and any valid identity proof like aadhar card, passport, PAN card or voter identification card or any other identity proof issued by a government authority.</li>
+            
+            <li><strong>Users are advised</strong> to call the bus operator to find out the exact boarding point, or any information which they may need for the purpose of boarding or travel in that trip.</li>
+            
+            <li><strong>The amenities, services, routes, fares, schedule, bus type, seat availability</strong> and any other details pertaining to the bus service are provided by the respective bus operator.</li>
+        </ul>
+
+        <h4>Contact Details : </h4>
+            <p>If you have any further queries or require assistance, please contact:</p>
+            <p>Customer Support: <strong>1800-123-4567</strong></p>
+            <p>Email: <strong>support&#64;mybus.com</strong></p>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+
+
+
+
+.background {
+  background-color: black;
+  color: greenyellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: black;
+  color: greenyellow;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  background-color: black;
+  color: greenyellow;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: greenyellow;
+}

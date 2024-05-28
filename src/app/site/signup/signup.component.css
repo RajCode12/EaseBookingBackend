@@ -1,0 +1,115 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: greenyellow;
+}
+
+form {
+    background-color: black;
+    color: greenyellow;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: greenyellow;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    background-color: black;
+    color: greenyellow;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #cccc00;
+} */
+
+/* General styling for the form */
+
+.head{
+    text-align: center;
+}
+
+.signup-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #565454;
+    border-radius: 8px;
+    background: #030303;
+}
+
+/* Style for each form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: greenyellow;
+}
+
+/* Style for form controls */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Style for the submit button */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    color:white;
+    background-color: #0056b3;
+}
+
+.submit-button:disabled {
+    background-color: #cccccc;
+    cursor: default;
+}

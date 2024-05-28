@@ -1,0 +1,110 @@
+.image-container {
+  position: absolute;
+  top: 140px; /* Adjust the bottom position as needed */
+  right: 20px; /* Start position at the right side */
+  animation: moveImageAndText 8s linear infinite; /* Adjust animation duration and timing function */
+  display: flex;
+  align-items: center; /* Center text vertically */
+}
+
+@keyframes moveImageAndText {
+  0% {
+      right: 20px; /* Start position at the right side */
+  }
+  100% {
+      right: calc(100% - 320px); /* End position at the left side (considering image and text width) */
+  }
+}
+
+.moving-image {
+  border-radius: 50%;
+  width: 100px; /* Adjust image width */
+  height: auto;
+}
+
+.moving-text {
+  margin-left: 10px; /* Add spacing between image and text */
+  font-size: 20px; /* Adjust text size */
+  color: #ff0000; /* Text color */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Full height of the viewport */
+  }
+  
+  .card {
+    width: 400px; /* Adjust as needed */
+    background-color: #a2bdf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  form div {
+    display: grid;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .heading{
+    padding-top: 8px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 255);
+  }
+  
+
+  .background-div {
+    background-image: linear-gradient(to bottom right,rgb(230, 240, 249),rgb(240, 230, 247));
+    padding: 20px; /* Optional: Adding padding for content inside the div */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

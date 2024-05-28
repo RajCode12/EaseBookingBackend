@@ -1,0 +1,62 @@
+<nav class="navbar">
+    <ul>
+      <li><button (click)="bookingClick()" class="box1">Your Booking</button></li>
+      <li><button (click)="transClick()" class="box1">Transaction History</button></li>
+      <li><button (click)="aboutClick()" class="box1">About Us</button></li>
+    </ul>
+</nav>
+<!-- <div class="container">
+    <router-outlet></router-outlet>
+</div> -->
+
+<h1 class="header">Book Your Ticket</h1>
+
+<!-- <div class="container2">
+    <div class="transport-options">
+      <div class="trans-container">
+        <div class="trans-details">
+          <img class="logo" src="../assets/bus-img.png" alt="Bus Logo" />
+          <h3>BUS</h3>
+          <button class="box" (click)="busClick()">Book</button>
+        </div>
+      </div>
+      <div class="trans-container">
+        <div class="trans-details">
+          <img class="logo" src="../assets/bus-img.png" alt="Bus Logo" />
+          <h3>TRAIN</h3>
+          <button class="box" (click)="trainClick()">Book</button>
+        </div>
+      </div>
+      <div class="trans-container">
+        <div class="trans-details">
+          <img class="logo" src="../assets/bus-img.png" alt="Flight Logo" />
+          <h3>FLIGHT</h3>
+          <button class="box" (click)="flightClick()">Book</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div id="services">
+    <div class="container">
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Bus</h2>
+          <button class="box" (click)="busClick()">Book</button>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>Train</h2>
+          <button class="box" (click)="trainClick()">Book</button>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i> 
+          <h2>Flight</h2>
+          <button class="box" (click)="flightClick()">Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

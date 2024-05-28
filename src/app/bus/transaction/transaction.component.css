@@ -1,0 +1,106 @@
+.header{
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 1px 0px 0px red;
+}
+
+.trans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.trans-box {
+    border: 2px solid #ddd;
+    padding: 30px;
+    margin: 20px;
+    box-sizing: border-box;
+    flex-basis: calc(20% - 20px);
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(250, 227, 227);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    border-radius: 50%;
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+.trans-details h3,
+.trans-details p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.continue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* transaction-history.component.css */
+
+/* Style for the container to center-align content */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+   padding: 80px;
+    
+  }
+  
+  /* Style for the card */
+  .card {
+    width: 100%; /* Make card width 100% of available space */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 34, 255, 0.5); /* Increase box shadow on hover */
+  }
+  
+  .card-body {
+    padding: 40px; /* Add padding inside the card body */
+  }
+  
+  .card-text {
+    font-size: 16px; /* Set font size for text */
+    margin-bottom: 10px; /* Add spacing between text elements */
+  }
+  
+  /* Style to make the card span full width */
+  @media (min-width: 768px) {
+    .card-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .card {
+      flex: 1; /* Allow the card to expand to fill available space */
+      margin: 0 10px; /* Add spacing between multiple cards */
+    }
+  }
+  
+

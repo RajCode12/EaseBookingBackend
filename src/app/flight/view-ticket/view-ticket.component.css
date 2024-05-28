@@ -1,0 +1,17 @@
+/* view-ticket.component.css */
+.ticket-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ticket {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .ticket h2 {
+    margin-top: 0;
+  }
+  

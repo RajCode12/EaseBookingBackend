@@ -1,0 +1,76 @@
+<!-- <body style="background-image: linear-gradient(to bottom right,rgb(100, 111, 255),rgb(255, 255, 255));"> -->
+ 
+    <div class="background-div">
+      <h1 class="heading">Welcome to Ease Travel Booking</h1>
+    <div class="centered-container">
+    <div class="card"> 
+ <form (ngSubmit)="onSubmit()" #trainForm="ngForm">
+    <label for="source">Source</label>
+    <select id="source" [(ngModel)]="train.source" name="source" required>
+        <option value="" disabled selected>Select source</option>
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Samastipur">Samastipur</option>
+        <option value="Darbhanga">Darbhanga</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Ambala">Ambala</option>
+        <option value="Gopalganj">Gopalganj</option>
+        <option value="Bettiah">Bettiah</option>
+           
+    </select>
+
+    <div>
+        <label for="destination">Destination</label>
+        <select id="destination" [(ngModel)]="train.destination" name="destination" required>
+            <option value="" disabled selected>Select destination</option>
+            <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Samastipur">Samastipur</option>
+        <option value="Darbhanga">Darbhanga</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Ambala">Ambala</option>
+        <option value="Gopalganj">Gopalganj</option>
+        <option value="Bettiah">Bettiah</option>
+        </select>
+    </div>
+    <div>
+        <label>Journey Date</label>
+        <input type="date" id="dateOfJourney" [(ngModel)]="train.dateOfJourney" name="dateOfJourney" required>
+    </div>
+    <button type="submit" [disabled]="!trainForm.form.valid">Search Train</button>
+    <img src="../assets/hf.jpeg" style="width: 100%; height: auto; ">
+
+</form> 
+
+
+</div>
+
+</div>
+<h1 style="text-align: center; position: relative; margin-top: 120px;">
+    <img src="../assets/diloge.gif" alt="Dialog Image" style="position: fixed; top: 40px; right: 10px; width: auto; height: 100px;">
+</h1>
+<h1 style="text-align: center; position: relative; margin-top: 120px;">
+    <img src="../assets/launcher.gif" alt="Dialog Image" style="position: fixed; top: 40px; left: 10px; width: auto; height: 100px;">
+</h1>
+
+<div class="image-container">
+    <!-- Image to be animated -->
+    <img src="../assets/trrun.png" alt="Moving Image" class="moving-image">
+    <!-- Text to move along with the image -->
+    <p class="moving-text"><b>Welcome to Indian Railways!</b></p>
+</div>
+<!-- <p><img src="../assets/trrun.png" alt="Moving Image" class="moving-image"></p> -->
+
+</div>
+<!-- </body> -->
+
+
+
+
+
+  
+  

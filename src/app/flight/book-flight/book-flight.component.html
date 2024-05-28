@@ -1,0 +1,147 @@
+<div class="flight-booking-form">
+    <h2>Book Your Flight</h2>
+    <form id="flightForm" (ngSubmit)="onSubmit(form)" #form="ngForm">
+
+        <label for="seatNumber">Seat Number:</label>
+        <input type="number" id="seatNumber" name="seatNumber" [(ngModel)]="flight.seatNumber" min="0" max="120"
+            required><br>
+
+        <label for="source">Source:</label>
+        <select id="source" name="source" [(ngModel)]="flight.source">
+
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Hisar">Hisar</option>
+            <option value="Gurgoan">Gurgoan</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Odissa">Odissa</option>
+        </select><br>
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" [(ngModel)]="flight.destination">
+
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Hisar">Hisar</option>
+            <option value="Gurgoan">Gurgoan</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Odissa">Odissa</option>
+        </select><br>
+
+        <label for="date">Date of Journey:</label>
+        <input type="date" id="date" [(ngModel)]="flight.date" name="date" required><br>
+
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" [(ngModel)]="flight.adults" name="adults" min="1" max="10" value="1"
+            required><br>
+
+        <label for="children">Children:</label>
+        <input type="number" id="children" [(ngModel)]="flight.children" name="children" min="0" max="10" value="0"
+            required><br>
+
+        <label for="passengerName">Passenger Name:</label>
+        <input type="text" id="passengerName" [(ngModel)]="flight.passengerName" name="passengerName" required><br>
+
+        <label for="passengerAge">Passenger Age:</label>
+        <input type="number" id="passengerAge" [(ngModel)]="flight.passengerAge" name="passengerAge" min="0" max="120"
+            required><br>
+
+        <label for="flightName">Flight Name:</label>
+        <select id="flightName" [(ngModel)]="flight.flightName" name="flightName">
+    
+            <option value="airIndia">Air India</option>
+            <option value="indigo">Indigo</option>
+            <option value="jetAirways">Jet Airways</option>
+        </select><br>
+
+        <label for="flightNumber">Flight Number:</label>
+        <select id="flightNumber" [(ngModel)]="flight.flightNumber" name="flightNumber">
+        
+            <option value="111">111</option>
+            <option value="121">121</option>
+            <option value="234">234</option>
+        </select><br>
+
+        <input type="checkbox" id="student" [(ngModel)]="flight.student" name="student">
+        <label for="student">Student</label><br>
+
+        <input type="checkbox" id="army" [(ngModel)]="flight.army" name="army">
+        <label for="army">Army</label><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="flight-search-form">
+    <h2>Search Flights</h2>
+    <form (ngSubmit)="searchFlights(form)" #form="ngForm">
+        <label for="source">Source:</label>
+        <select id="source" name="source" ngModel required>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Hisar">Hisar</option>
+            <option value="Gurgoan">Gurgoan</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Odissa">Odissa</option>
+        </select><br>
+
+
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" ngModel required>
+
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Hisar">Hisar</option>
+            <option value="Gurgoan">Gurgoan</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Odissa">Odissa</option>
+        </select><br>
+
+        <label for="date">Date of Journey:</label>
+        <input type="date" id="date" name="date" ngModel required><br>
+
+
+        <button type="search">Search</button>
+    </form>
+</div>
+
+<div *ngIf="availableFlights.length > 0">
+    <h2>Available Flights</h2>
+    <div *ngFor="let flight of availableFlights">
+        <p>{{ flight.flightName }} - {{ flight.flightNumber }}</p>
+
+        <button (click)="bookFlight(flight)">Book Now</button>
+    </div>
+</div> -->

@@ -1,0 +1,119 @@
+/* .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.custom-table th, .custom-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 20%;
+} */
+
+.big-container {
+  background-color: #f5ecec;
+  padding: 20px;
+}
+
+.booking-form-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    /* background-color: rgb(11, 6, 6); */
+    background-color: #f69898;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .booking-header {
+    color: rgb(228, 15, 15);
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .bus-form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .modi {
+    border-radius: 50%;
+    align-content: center;
+    margin-left: 40%;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .form-control {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+  }
+  
+  .btn-continue {
+    background-color: #2933f0;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-continue:hover {
+    background-color: #2933f0;
+  }
+  
+  .btn-continue:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+
+
+  .image-container {
+    position: absolute;
+    top: 40px; /* Adjust the bottom position as needed */
+    right: 20px; /* Start position at the right side */
+    animation: moveImageAndText 8s linear infinite; /* Adjust animation duration and timing function */
+    display: flex;
+    align-items: center; /* Center text vertically */
+  }
+   
+  @keyframes moveImageAndText {
+    0% {
+        right: 20px; /* Start position at the right side */
+    }
+    100% {
+        right: calc(100% - 320px); /* End position at the left side (considering image and text width) */
+    }
+  }
+   
+  .moving-image {
+    border-radius: 50%;
+    width: 100px; /* Adjust image width */
+    height: auto;
+  }
+   
+  .moving-text {
+    margin-left: 10px; /* Add spacing between image and text */
+    font-size: 20px; /* Adjust text size */
+    color: #f20606; /* Text color */
+  }
+  

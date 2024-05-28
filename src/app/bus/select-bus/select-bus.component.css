@@ -1,0 +1,42 @@
+.bus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bus-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(135, 185, 186), rgb(212, 153, 219));
+}
+.logo {
+    border-radius: 130px;
+    max-height: 100px;
+}
+
+.bus-box:nth-child(3n+1) {
+    clear: both;
+}
+
+.bus-details {
+    margin-bottom: 20px;
+}
+
+.continue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+}

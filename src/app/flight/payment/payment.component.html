@@ -1,0 +1,35 @@
+<!-- payment.component.html -->
+<div class="payment-container">
+    <h2>Confirm Your Booking and Make Payment</h2>
+    <div class="booking-details">
+      <h3>Flight Details</h3>
+      <p><strong>Seat Number:</strong> {{ flight.seatNumber }}</p>
+      <p><strong>Source:</strong> {{ flight.source }}</p>
+      <p><strong>Destination:</strong> {{ flight.destination }}</p>
+      <!-- Add more flight details as needed -->
+    </div>
+  
+    <!-- Payment Form -->
+    <form (ngSubmit)="confirmBooking()" #paymentForm="ngForm" class="payment-form">
+      <!-- Payment fields -->
+      <div class="form-group">
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" [(ngModel)]="paymentMethod" required>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <!-- Add more payment options as needed -->
+        </select>
+      </div>
+  
+      <!-- Other payment fields (card number, expiry date, CVV, etc.) -->
+      <!-- Add your payment fields here -->
+
+      <div *ngIf="paymentMethod === 'credit' || paymentMethod === 'debit'" class="form-group">
+        <label>Card Number:</label>
+        <input type="text">
+      </div>
+  
+      <button type="submit" class="btn-confirm">Confirm Booking & Pay</button>
+    </form>
+  </div>
+  

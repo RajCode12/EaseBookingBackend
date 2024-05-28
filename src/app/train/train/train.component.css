@@ -1,0 +1,156 @@
+.container1 {
+  display: flex; /* Use flexbox to line items up horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-end; /* Align items to the right */
+  padding: 5px; /* Minimal padding around the container */
+  position: absolute; /* Position it relative to the nearest positioned ancestor (or the body if none) */
+  top: 0; /* Align to the top of the container */
+  right: 0; /* Align to the right of the container */
+}
+
+.box1 {
+  margin-left: 10px; /* Space between buttons and text */
+}
+
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container {
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.train-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Center cards horizontally */
+}
+
+.card {
+  background-color: white;
+  width: 310px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  background-image: linear-gradient(to bottom right,rgb(188, 195, 251),rgb(252, 189, 189));
+  padding: 20px;
+  text-align: center;
+}
+
+.train-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.train-title {
+  margin-bottom: 10px;
+}
+
+.train-text {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.custom-table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgb(249, 214, 214);
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #faf2f2;
+  
+}
+
+.box {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket Design */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 3px solid #333;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.heading {
+  text-decoration: underline;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.bus-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bus-image img {
+  width: auto;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
